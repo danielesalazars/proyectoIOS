@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -50,9 +50,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6C80503823DACC880091E23F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		6CE81F8823DA79AC006EF5FB = {
 			isa = PBXGroup;
 			children = (
+				6C80503823DACC880091E23F /* Extensions */,
 				6CE81F9323DA79AC006EF5FB /* proyecto */,
 				6CE81F9223DA79AC006EF5FB /* Products */,
 				AD4C5A8449CF9E93A22D02C8 /* Pods */,
@@ -88,7 +96,6 @@
 				E6697415CE5EE07EF5433E40 /* Pods-proyecto.debug.xcconfig */,
 				A0B462FA455B4542FD2402E6 /* Pods-proyecto.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
