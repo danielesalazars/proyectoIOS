@@ -22,15 +22,18 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="627"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="o4V-xA-D3G">
-                                <rect key="frame" x="25" y="273.5" width="325" height="120"/>
+                                <rect key="frame" x="25" y="116" width="325" height="435"/>
                                 <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_app" translatesAutoresizingMaskIntoConstraints="NO" id="Iuv-71-3xS">
+                                        <rect key="frame" x="0.0" y="0.0" width="325.00000000000011" height="280"/>
+                                    </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A9r-xz-XLt">
-                                        <rect key="frame" x="0.0" y="0.0" width="325" height="30"/>
+                                        <rect key="frame" x="0.0" y="295" width="325" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="SK8-XN-Jod"/>
                                         </constraints>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
@@ -39,12 +42,12 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ryo-CA-RG3">
-                                        <rect key="frame" x="0.0" y="45" width="325" height="30"/>
+                                        <rect key="frame" x="0.0" y="340" width="325" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="WfK-Xx-Drh"/>
                                         </constraints>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
@@ -53,8 +56,12 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9U-ey-G77">
-                                        <rect key="frame" x="0.0" y="90" width="325" height="30"/>
+                                        <rect key="frame" x="0.0" y="385" width="325" height="50"/>
                                         <color key="backgroundColor" red="0.96078431369999995" green="0.45098039220000002" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="9wd-yR-y9v"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="Ingresar">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -96,5 +103,6 @@
     </scenes>
     <resources>
         <image name="b_login" width="640" height="1136"/>
+        <image name="logo_app" width="428" height="280"/>
     </resources>
 </document>
