@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
     
@@ -16,5 +17,26 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    @IBAction func loginAction(_ sender: Any) {
+        guard let username = tfCorreo.text, !username.isEmpty else {
+            return
+        }
+        guard let password = tfClave.text, !password.isEmpty else {
+            return
+        }
+        
+        Auth.auth().signIn(withEmail: username, password: password) { (auth, error) in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+            guard let auth = auth else {
+                return
+            }
+            let stb = UIStoryboard(name: "Main", bundle: nil)
+            let controller = stb.instantiateViewController(withIdentifier: "tabBarID")
+            self.present(controller, animated: true, completion: nil)
+        }
+    }
+    
 }

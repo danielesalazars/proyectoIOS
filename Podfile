@@ -7,4 +7,5 @@ target 'proyecto' do
 
   # Pods for proyecto
   pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
 end

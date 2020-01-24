@@ -48,7 +48,7 @@
                                         </constraints>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -65,6 +65,9 @@
                                         <state key="normal" title="Ingresar">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pBY-ic-BQ9"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -99,6 +102,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="130.40000000000001" y="111.99400299850076"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="v8x-CO-iqB">
+            <objects>
+                <viewController id="yFf-g7-ao2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ps1-Lv-oT9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="f9n-pY-3a7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hAk-BL-Wok"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Una-SF-gU5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3580" y="56.221889055472268"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="pfX-JM-Xe6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vo3-IN-fCb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="lgn-AB-011"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1B8-Hs-8ly">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yFf-g7-ao2" kind="relationship" relationship="rootViewController" id="4zK-gN-G58"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9lt-ic-5IS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2640.8000000000002" y="56.221889055472268"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="6po-tP-yEW">
+            <objects>
+                <tabBarController storyboardIdentifier="tabBarID" automaticallyAdjustsScrollViewInsets="NO" id="Vfv-3I-Bek" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TiL-Te-23n">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Vo3-IN-fCb" kind="relationship" relationship="viewControllers" id="wqS-6T-QXy"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Hc-q2-y1Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1701.5999999999999" y="56.221889055472268"/>
         </scene>
     </scenes>
     <resources>
